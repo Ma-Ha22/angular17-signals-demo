@@ -7,7 +7,7 @@ A modern Angular 17 project demonstrating the use of Signals, Computed, Effect, 
 - Fetch products from API
 - Search & filter using computed signals
 - State management using signals
-- Reactive UI بدون RxJS
+- Reactive UI without RxJS
 - Component communication using input signals
 
 ## 🧠 Concepts Used
@@ -16,13 +16,12 @@ A modern Angular 17 project demonstrating the use of Signals, Computed, Effect, 
 - effect()
 - input()
 
-## 📸 Screenshots
-(Add screenshots here)
 
 ## 🛠 Tech Stack
 - Angular 17
 - TypeScript
 - CSS
+- bootstrap
 
 ## ▶️ Run Project
 ```bash
