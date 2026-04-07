@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ParentComponent implements OnInit{
   products= signal<IProduct[]>([]);
-  search = signal('');
+  search = signal("");
   loading = signal(false);
   constructor(private _ProductsService:ProductsService){}
   ngOnInit(): void {

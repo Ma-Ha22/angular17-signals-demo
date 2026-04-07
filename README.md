@@ -1,5 +1,52 @@
 # Angular17SignalsDemo
 
+
+A modern Angular 17 project demonstrating the use of Signals, Computed, Effect, and Input Signals in a real-world scenario.
+
+## 🚀 Features
+- Fetch products from API
+- Search & filter using computed signals
+- State management using signals
+- Reactive UI بدون RxJS
+- Component communication using input signals
+
+## 🧠 Concepts Used
+- signal()
+- computed()
+- effect()
+- input()
+
+## 📸 Screenshots
+(Add screenshots here)
+
+## 🛠 Tech Stack
+- Angular 17
+- TypeScript
+- CSS
+
+## ▶️ Run Project
+```bash
+npm install
+ng serve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
 ## Development server
