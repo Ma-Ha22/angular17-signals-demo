@@ -13,12 +13,14 @@ import { CommonModule } from '@angular/common';
 })
 export class ParentComponent implements OnInit{
   products= signal<IProduct[]>([]);
-  search = signal('')
+  search = signal('');
+  loading = signal(false);
   constructor(private _ProductsService:ProductsService){}
   ngOnInit(): void {
+    this.loading.set(true);
     this._ProductsService.getAll().subscribe((res:IProduct[])=>{
       this.products.set(res);
-      console.log('products',res);
+      this.loading.set(false)
     })
   }
   filteredProducts = computed<IProduct[]>(()=>{

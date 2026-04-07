@@ -13,7 +13,7 @@ export class ProductCardComponent {
   priceWithTax = computed(()=>this.product().price * 1.4);
   constructor(){
     effect(()=>{
-      console.log('product =>(',this.product());
+      console.log('product =>',this.product());
     })
   }
 }

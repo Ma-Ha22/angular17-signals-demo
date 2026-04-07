@@ -2,6 +2,9 @@
     <div class="input-group mb-4">
   <input type="text" class="form-control" placeholder="search..." (input)="search.set($any($event.target).value)">
 </div>
+
+<div *ngIf="loading()">Loading...</div>
+
 <div class="row">
 
 <app-product-card class="col-4" *ngFor="let product of filteredProducts()" [product]="product"></app-product-card>
