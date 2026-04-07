@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, effect, input } from '@angular/core';
 import { IProduct } from '../Interfaces/Iproduct.interface';
 
 @Component({
@@ -10,4 +10,10 @@ import { IProduct } from '../Interfaces/Iproduct.interface';
 })
 export class ProductCardComponent {
   product = input.required<IProduct>();
+  priceWithTax = computed(()=>this.product().price * 1.4);
+  constructor(){
+    effect(()=>{
+      console.log('product =>(',this.product());
+    })
+  }
 }
